@@ -1,0 +1,296 @@
+:root {
+  --red-elements: rgb(196, 0, 70);
+  --brown-elements: rgb(40, 40, 40);
+  --blue-elements: rgb(70, 86, 123);
+  --ligh-grey-elements: rgb(48, 56, 65);
+}
+
+html {
+  box-sizing:  border-box;
+  width: 100vw;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  font-family: "Anta", sans-serif;
+  height: 100%;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  
+}
+
+#navbar {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  background-color: var(--red-elements);
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  gap: 20px;
+  padding: 5px 25px;
+}
+
+.navbar-list li {
+  display: flex;
+  justify-content: center;
+  flex-basis: 5%;
+}
+
+.navbar-list li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--brown-elements);
+  font-size: 250%;
+}
+
+#welcome-section h1 {
+  color: white;
+  margin: 0;
+}
+
+#welcome-section p {
+  color: var(--red-elements);
+  font-style: italic;
+  margin: 5px;
+}
+
+#projects {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--blue-elements);
+  text-align: center;
+}
+
+#projects h2 {
+  color: white;
+  border-bottom: 3px solid white;
+  padding: 10px;
+  font-size: 250%;
+  width: fit-content;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+
+.project-tile {
+  padding: 20px;
+  text-decoration: none;
+}
+
+
+.project-image {
+  width: 550px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 3px 3px 0 0;
+}
+
+
+.project-title {
+  color: white;
+  background-color: var(--ligh-grey-elements);
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  margin-top:-1%;
+  border-radius: 0 0 3px 3px;
+}
+
+.code {
+  margin: 0 5px 0 5px;
+}
+
+.more-projects {
+  width: 150px;
+  height: 50px;
+  background-color: var(--ligh-grey-elements);
+  margin-bottom: 50px;
+  border-radius: 3px;
+  display: flex;
+}
+
+.more-projects:hover {
+  background-color: var(--red-elements);
+  transition: ease 0.7s;
+}
+
+.material-symbols-outlined {
+  width: 25%;
+  height: 70%;
+  padding-top: 10px;
+  color: white;
+}
+
+.more-projects a {
+  color: white;
+  text-decoration: none;
+  font-size: x-large;
+  margin-top: 8px;
+}
+
+#contact-section {
+  height: 85vh;
+  background-color: var(--ligh-grey-elements);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-bottom: 4px solid var(--red-elements)
+}
+
+#contact-section h3 {
+  font-size: 5em;
+  margin: 0;
+}
+
+#contact-section p {
+  font-style: oblique;
+  font-size: larger;
+  font-weight: 100;
+}
+
+.contact-links {
+  margin-top: 20px;
+}
+
+.contact-button {
+  margin: 0 20px 0 20px;
+  color: white;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.contact-button:hover{
+  color: var(--red-elements);
+}
+
+footer {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ligh-grey-elements);
+  color: white;
+}
+
+footer p {
+  width: fit-content;
+  font-size: larger;
+  padding: 10px;
+  margin: 10px;
+}
+
+@media (max-width: 1750px) {
+  .projects-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .project-image {
+    width: 750px;
+    height: 450px;
+  }
+}
+
+
+@media (max-width: 1550px) {
+  .project-image {
+    width: 650px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .project-image {
+    width: 600px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .project-image {
+    width: 550px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .project-image {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .project-image {
+    width: 450px;
+  }
+}
+
+@media (max-width: 950px) {
+  .project-image {
+    width: 400px;
+  }
+}
+
+@media (max-width: 850px) {
+  .project-image {
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  .projects-grid {
+    grid-template-columns: auto;
+  }
+
+  .project-image {
+    width: 550px;
+  }
+}
+
+@media (max-width: 580px) {
+  .project-image {
+    width: 400px;
+  }
+}
+
+@media (max-width: 710px) {
+  .contact-links {
+    
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  
+  .contact-button {
+    font-size: larger;
+    padding: 20px;
+  }
+}
